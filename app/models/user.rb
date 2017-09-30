@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
+<<<<<<< HEAD
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
          :omniauthable, omniauth_providers: [:github, :google_oauth2]
@@ -13,4 +14,10 @@ class User < ApplicationRecord
       user.password = Devise.friendly_token[0,20]
     end
   end
+=======
+  extend Devise::Models
+  devise :database_authenticatable, :registerable,
+    :recoverable, :rememberable, :trackable, :validatable,
+    :omniauthable, omniauth_providers: [:github]
+>>>>>>> master
 end

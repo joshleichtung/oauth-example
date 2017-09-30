@@ -6,13 +6,21 @@ Devise.setup do |config|
   # confirmation, reset password and unlock tokens in the database.
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
+<<<<<<< HEAD
   # config.secret_key = 'de2f3048dae01c71ad041dd07981f0e82b63ee18d68afab154c6402ce750ef24d33a04517af7b5e46c4300282e5f9413f65c25fd00fe90f0f7ddb976395997c7'
+=======
+  # config.secret_key = '3a3dc2f92e9a2044429e60605c845e7fe40ad107cc83ea4c557107269895179653f83ce673e25252b5f8b9fc29e6f022901520a423938309c0d32615e813d49d'
+>>>>>>> master
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
+<<<<<<< HEAD
   config.mailer_sender = 'codesores@gmail.complex'
+=======
+  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+>>>>>>> master
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -108,7 +116,11 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 11
 
   # Set up a pepper to generate the hashed password.
+<<<<<<< HEAD
   # config.pepper = '4682a4cfc21293fb8cf6622a8f3ca5aed11566b83b8d604ae56807b16634233a3488f74bccd1b4c92eea20b9e63e0130b5f39bbc9f6a380799da186d53633835'
+=======
+  # config.pepper = '8dfb3a2c1d9164f7b3cb8f29e62e837d690ed76c43cb83867685d9b267114268f01fd5c11eb8c0c97494e63254cf68a74861f01c15f7e88011c7a9508ade5a57'
+>>>>>>> master
 
   # Send a notification to the original email when the user's email is changed.
   # config.send_email_changed_notification = false
@@ -250,9 +262,13 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
+<<<<<<< HEAD
   config.omniauth :github,ENV['GITHUB_KEY'], ENV['GITHUB_SECRET'], scope: 'user,public_repo'
   config.omniauth :google_oauth2, ENV["GOOGLE_CLIENT_ID"], ENV["GOOGLE_CLIENT_SECRET"]
 
+=======
+  # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
+>>>>>>> master
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
@@ -275,5 +291,10 @@ Devise.setup do |config|
   #
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
+<<<<<<< HEAD
   config.omniauth_path_prefix = '/users/auth'
+=======
+  # config.omniauth_path_prefix = '/my_engine/users/auth'
+  config.omniauth :github, ENV['GITHUB_KEY'], ENV['GITHUB_SECRET']
+>>>>>>> master
 end

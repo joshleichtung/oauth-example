@@ -1,6 +1,10 @@
 class DogsController < ApplicationController
   before_action :set_dog, only: [:show, :edit, :update, :destroy]
+<<<<<<< HEAD
   before_action :authenticate_user!, except: [:show, :index]
+=======
+  before_action :authenticate_user!, only: [:edit, :update, :destroy]
+>>>>>>> master
 
   # GET /dogs
   # GET /dogs.json
