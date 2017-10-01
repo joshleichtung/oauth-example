@@ -262,13 +262,10 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
-<<<<<<< HEAD
   config.omniauth :github,ENV['GITHUB_KEY'], ENV['GITHUB_SECRET'], scope: 'user,public_repo'
   config.omniauth :google_oauth2, ENV["GOOGLE_CLIENT_ID"], ENV["GOOGLE_CLIENT_SECRET"]
 
-=======
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
->>>>>>> master
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
@@ -291,10 +288,7 @@ Devise.setup do |config|
   #
   # When using OmniAuth, Devise cannot automatically set OmniAuth path,
   # so you need to do it manually. For the users scope, it would be:
-<<<<<<< HEAD
   config.omniauth_path_prefix = '/users/auth'
-=======
   # config.omniauth_path_prefix = '/my_engine/users/auth'
   config.omniauth :github, ENV['GITHUB_KEY'], ENV['GITHUB_SECRET']
->>>>>>> master
 end
